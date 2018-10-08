@@ -1,0 +1,202 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Akhil}{Singhal}{Contact: (+91) 8629015410 \\
+Mail: \href{mailto:akhilsinghal1234@gmail.com}{akhilsinghal1234@gmail.com} \\
+LinkedIn: \href{https://www.linkedin.com/in/akhil-singhal-a59448106/}{linkedin.com/in/akhil-singhal}
+
+Github: \href{https://github.com/akhilsinghal1234}{github.com/akhilsinghal1234}
+}
+
+
+% \begin{center}
+% \large \color{subheadings}\custombold{ }
+% \end{center}
+\vspace{8pt}
+\section{Education}
+\runsubsection{Indian Institute of Technology(IIT) Mandi}
+\descript{| B.Tech in Computer Science}
+\location{Expected June 2019 | Himachal Pradesh, India 
+}
+ \textbullet{} Cum. GPA: 8.8
+\sectionsep
+
+\runsubsection{SumerMal Jain Public School}
+\descript{| Senior Sec. Education}
+\location{ April 2015 | Delhi, India}
+ \textbullet{} Percentage: 94.6\%
+\sectionsep
+
+\section{Experience}
+
+\runsubsection{Siemens Technology and Services}
+\descript{| Software Design and Testing Intern}
+\location{Dec 2017 - Feb 2018 | Bengaluru, India}
+\begin{tightemize}
+\item Worked on Metric Driven Development(MDD) for
+Intelligent Software Engineering.
+\item Developed API to extract metrics for each source code in a Git repository in real-time(commit) and compare with previous versions.
+\item Designed UI to visualize different use-cases important for tracking maintainability and development. 
+\item Used ML techniques to predict bugs in Software iterations using Mozilla's-{\addfontfeatures{FakeBold=2.5}Bugzilla} Repository using source-code metrics.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{MothersonSumi Infotech \& Designs}
+\descript{| Intern }
+\location{June 2017 – Aug 2017 | Noida, India}
+\begin{tightemize}
+\item Completed project on Internet Of Things(IOT).
+\item Used Arduino micro-controller to save different sensor values on online database and hosted a website for the same.
+\item Designed UI to visualize the sensor values over time.
+\end{tightemize}
+\sectionsep
+
+
+\section{Projects}
+
+\runsubsection{3D-Gait Recognition} \\
+\normalsize Using Deep learning techniques, developed a model to recognize human beings using 3D gait as a biometric. Used Machine Learning and Deep Learning models to generate mesh for human body for a given picture or video. Developed single pipeline to generate human body mesh, train and recognize human on the basis of the 3D gait.	\\
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Pixlr}	\\
+\normalsize Designed a dynamic Website - Pixlr, dedicated for the artists and
+photographers to showcase their skills for Database project. Used MySQL as database, PHP \& JavaScript for back-end , HTML \& CSS for front-end development.\\
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Automated Parking System(\textsc{APS})}	\\
+\normalsize Developed a fully functional prototype for Android app controlled
+Automated Parking System(APS) for college event - \textsc{Aavishkar}.\\
+The prototype was designed as a solution to parking problems existing in urban areas.
+\sectionsep
+
+\begin{minipage}[t]{0.45\textwidth}
+\section{Courses}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \large Database Systems.
+\item Deep Learning and Data Mining.
+\item Machine Learning and Artificial Intelligence.
+\item System Practicum.
+\item Advanced Data Structures and Algorithms.
+\end{tightemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+
+
+
+\section{Programming Languages}
+\location{\large Over 5000 lines:}
+\large \hspace{2mm} \textbullet{} C \textbullet{}  C++ \textbullet{} Python \\
+\location{\large Over 1000 lines:}
+\large \hspace{2mm} \textbullet{} CSS \textbullet{} PHP \textbullet{} MySQL\\
+\location{\large  Familiar:}
+\large \hspace{2mm} \textbullet{} Java  \textbullet{} Bash \textbullet{} Haskell \textbullet{} \LaTeX\\
+\sectionsep
+\end{minipage}
+
+\newpage
+
+\vspace*{8mm}
+\section{Technical Skills}
+\large{{\addfontfeatures{FakeBold=5.5}Back-end Development}}: Python, C++, Php.
+
+\large{{\addfontfeatures{FakeBold=5.5}Front-end Development}}: HTML, CSS.
+
+\large{{\addfontfeatures{FakeBold=5.5}Databases}}: MySQL, PostgreSQL, MongoDB, InfluxDB.
+
+\large{{\addfontfeatures{FakeBold=5.5}Script}}: Python, Bash, Shell. 
+
+\large{{\addfontfeatures{FakeBold=5.5}Others}}: Linux, Docker, VMs, Tensorlow, Keras. 
+\sectionsep
+
+\section{Achievements}
+\begin{tightemize}
+\vspace{\topsep}
+\item First year branch topper with cum GPA : 9.36.
+\item Secured 2\textsuperscript{nd} position in Aavishkar(intra IIT team event) for the APS.
+\end{tightemize}
+
+\section{Hobbies \& Interests}
+\vspace{\topsep}
+\begin{tightemize}
+\item Data Structures and Algorithms
+\item Big Data
+\item Internet of Things(IoT)
+\item Football, Hiking and trekking.
+\end{tightemize}
+
+\hfill
+% \begin{minipage}[t]{.35\textwidth}
+% \subsection{Spoken \& Written}
+% \location{Native fluency:} English, Spanish\\
+% \location{Reading fluency:} Chinese, Japanese\\
+% \end{minipage}
+
+\end{document}  \documentclass[]{article}
